@@ -1,94 +1,37 @@
-# #Q1>) WAP to input user's name and print its length.
+# # Q.1)WAP to ask the user to enter names of their 3 favorite movies & store them in a list.
 
-# name = input("Enter your name: ")
+# movies = []
 
-# print("Length of your name:", len(name))
+# movie1 = input("Enter your 1st favorite movie: ")
+# movie2 = input("Enter your 2nd favorite movie: ")
+# movie3 = input("Enter your 3rd favorite movie: ")
 
-#:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+# movies.append(movie1)
+# movies.append(movie2)
+# movies.append(movie3)
 
-#  #Q2.) WAP to find the occurance of '$' in a string
-
-# text = input("Enter a string: ")
-
-# print("Occurrence of '$':", text.count("$"))
-
-#:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+# print("Your favorite movies are:", movies)
 
 
-# #Q.3) Conditional Statements
+# #Q2.)WAP to check if a list contains a palindrome of elements. (Hint: use copy( ) method)
 
+# mylist = [1, 2, 3, 2, 1]
 
-# # Conditional Statements
-# # Grade students based on marks
-# # marks >= 90, grade = “A”
-# # 90 > marks >= 80, grade = “B”
-# # 80 > marks >= 70, grade = “C”
-# # 70 > marks, grade = “D”
+# copy_list = mylist.copy()
+# copy_list.reverse()
 
-
-# marks = int(input("Enter your marks :-"))
-
-# if marks >= 90 :
-#     grade = "A"
-
-# elif (marks >= 80 and marks < 90) :
-#     grade = "B"
-
-# elif (marks >= 70 and marks < 80) :
-#     grade = "C"
-
+# if mylist == copy_list:
+#     print("Palindrome")
 # else:
-#     grade = "D"
-
-# print("Gade of student ->" , grade)
-# print("FAIL")
-
-
-#:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-
-#Q.4)WAP to check if a number entered by the user is odd or even.
-
-# num = int(input("Enter your number :"))
-
-# if (num % 2 == 0):
-#     print("Even number")
-
-# else :
-#     print("Odd Number")
-
-
-#:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-
-# #Q.5)WAP to find the greatest of 3 numbers entered by the user.
-
-# a = int(input("Enter your first number :- "))
-# b = int(input("Enter your first number :- "))
-# c = int(input("Enter your first number :- "))
-
-# if (a > b and b > c) :
-#     print("greatest number is a")
-
-# elif (b > a and a > c):
-#     print("greatest number is b")
-
-# else :
-#     print("greatest number is c")
+#     print("Not Palindrome")
 
 
 
-#::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+# # #Q3.)WAP to count the number of students with the “A” grade in the following tuple.
+# # [”C”, “D”, “A”, “A”, “B”, “B”, “A”]
 
+# grades = ("C", "D", "A", "A", "B", "B", "A")
 
+# count = grades.count("A")
 
-
-# #Q6.)WAP to check if a number is a multiple of 7 or not.
-
-# num = int(input("Enter your number :-"))
-
-# if num % 7 == 0 :
-#     print("Number is a Multiple of 7")
-
-# else:
-#     print("Number is not multile of 7")
+# print("Number of students with A grade:", count)
